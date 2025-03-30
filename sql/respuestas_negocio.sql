@@ -2,12 +2,13 @@
 1. Listar los usuarios que cumplan años el día de hoy cuya cantidad de ventas realizadas en enero 2020 sea superior a 1500. 
 
 */
+
 SELECT 
   c.first_name, 
   c.last_name,
   c.birth_date,
   c.email,
-  SUM(o.value) AS total_volue
+  SUM(o.value) AS total_value
 
 FROM 
   `project.schema.customer` AS c
@@ -42,7 +43,7 @@ WITH sallers AS (
     c.customer_id,
     c.first_name,
     c.last_name,
-    COUNT(DISTINCT o.pedido_id) AS total_orders,
+    COUNT(DISTINCT o.order_id) AS total_orders,
     SUM(o.quantity) AS total_items,
     SUM(o.value) AS total_amount_transacted,
     ROW_NUMBER() OVER (PARTITION BY EXTRACT(YEAR FROM o.created_at), EXTRACT(MONTH FROM o.created_at) ORDER BY SUM(o.value) DESC) AS ranking

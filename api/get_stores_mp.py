@@ -24,7 +24,7 @@ def search_stores(user_id, access_token, params=None):
         response.raise_for_status()
         return response.json()
     except requests.exceptions.HTTPError as errh:
-        print(f"Erro HTTP ao buscar lojas: {errh}")
+        print(f"Error HTTP: {errh}")
         return None
 
 
@@ -47,7 +47,7 @@ def get_store(access_token, store_id):
         response.raise_for_status()
         return response.json()
     except requests.exceptions.HTTPError as errh:
-        print(f"Erro HTTP ao obter loja {store_id}: {errh}")
+        print(f"Error HTTP: {errh}")
         return None
 
 def flat_store_data(store_data):
@@ -99,7 +99,7 @@ def flat_store_data(store_data):
 
 def write_to_csv(data, file_name):
     """
-    Writes a list of dictionaries to a CSV file.
+    Write a list of dictionaries to a CSV file.
 
     Args:
         data (list): List of dictionaries with data.

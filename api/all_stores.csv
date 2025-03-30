@@ -1,0 +1,13 @@
+id,name,date_creation,business_day,business_open_time,business_close_time,location_address,location_reference,location_latitude,location_longitude,location_city,location_state
+66586265,Loja 1,2025-03-28T21:55:18.330Z,Monday,08:00,16:00,"R. Martim Francisco - Vila Buarque, São Paulo - SP, Brasil",,-23.5400958,-46.6531879,,BR-SP
+66586427,Loja 2,2025-03-28T22:02:37.309Z,Monday,08:00,16:00,"R. Martim Francisco - Vila Buarque, São Paulo - SP, Brasil",,-23.5400958,-46.6531879,,BR-SP
+66586427,Loja 2,2025-03-28T22:02:37.309Z,Tuesday,08:00,16:00,"R. Martim Francisco - Vila Buarque, São Paulo - SP, Brasil",,-23.5400958,-46.6531879,,BR-SP
+66586603,Loja 4,2025-03-28T22:09:18.840Z,Monday,08:00,16:00,"R. Martim Francisco - Vila Buarque, São Paulo - SP, Brasil",,-23.5400958,-46.6531879,,BR-SP
+66586603,Loja 4,2025-03-28T22:09:18.840Z,Sunday,08:00,16:00,"R. Martim Francisco - Vila Buarque, São Paulo - SP, Brasil",,-23.5400958,-46.6531879,,BR-SP
+66586621,Loja 5,2025-03-28T22:09:59.888Z,Saturday,00:00,23:59,"R. Martim Francisco - Vila Buarque, São Paulo - SP, Brasil",,-23.5400958,-46.6531879,,BR-SP
+66586641,Loja 6,2025-03-28T22:10:41.139Z,Friday,00:00,23:59,"R. Augusta - Consolação, São Paulo - SP, Brasil",,-23.5539749,-46.655794,,BR-SP
+66586815,Loja 9,2025-03-28T22:19:13.462Z,Wednesday,00:00,23:59,"Rua Henrique Schaumann - Pinheiros, São Paulo - SP, Brasil",,-23.5598117,-46.6809581,,BR-SP
+66587053,Loja 8,2025-03-28T22:18:45.775Z,Friday,00:00,23:59,"R. José Paulino - Bom Retiro, São Paulo - SP, Brasil",,-23.5304415,-46.639342,,BR-SP
+66587085,Loja 10,2025-03-28T22:20:02.480Z,Wednesday,00:00,23:59,R. Vinte e Cinco de Março - Centro Histórico de São Paulo,,-23.5436238,-46.6325199,,BR-SP
+68994784,Loja 3,2025-03-28T22:08:27.949Z,Thursday,00:00,23:59,"R. Martim Francisco - Vila Buarque, São Paulo - SP, Brasil",,-23.5400958,-46.6531879,,BR-SP
+68994856,Loja 7,2025-03-28T22:11:09.021Z,Wednesday,00:00,23:59,"R. José Paulino - Bom Retiro, São Paulo - SP, Brasil",,-23.5304415,-46.639342,,BR-SP

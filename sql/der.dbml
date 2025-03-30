@@ -1,0 +1,58 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table customer {
+  customer_id integer [primary key]
+  email varchar
+  first_name varchar
+  last_name  varchar
+  gender  varchar
+  birth_date  varchar
+  address  integer
+  phone_number  varchar
+  status   varchar
+  is_seller boolean
+  is_buyer boolean
+}
+
+Table item {
+  item_id integer [primary key]
+  category_id integer
+  product_name varchar
+  description varchar
+  status varchar
+  price float
+  created_at timestamp
+  updated_at timestamp
+  deleted_at timestamp
+  is_deleted boolean
+}
+
+Table category {
+  category_id integer [primary key]
+  category_name varchar
+  status varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table order {
+  order_id integer [primary key]
+  customer_seller_id integer
+  customer_buyer_id integer
+  item_id integer
+  quantity integer 
+  value float
+  status varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+Ref: "customer"."customer_id" < "order"."customer_seller_id"
+
+Ref: "customer"."customer_id" < "order"."customer_buyer_id"
+
+Ref: "item"."category_id" < "category"."category_id"
+
+Ref: "item"."item_id" < "order"."item_id"

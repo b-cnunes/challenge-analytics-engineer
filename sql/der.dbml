@@ -49,10 +49,10 @@ Table order {
 }
 
 
-Ref: "customer"."customer_id" < "order"."customer_seller_id"
+Ref: "order"."customer_seller_id" > "customer"."customer_id" 
 
-Ref: "customer"."customer_id" < "order"."customer_buyer_id"
+Ref: "order"."customer_buyer_id" > "customer"."customer_id" 
+
+Ref: "item"."item_id" > "order"."item_id"
 
 Ref: "item"."category_id" < "category"."category_id"
-
-Ref: "item"."item_id" < "order"."item_id"

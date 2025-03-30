@@ -39,15 +39,15 @@ CREATE OR REPLACE TABLE `project.schema.category` (
 
 CREATE OR REPLACE TABLE `project.schema.orders` (
     order_id INT64 --PRIMARY KEY,
-    cutomer_seller_id INT64,
-    cutomer_buyer_id INT64,
+    customer_seller_id INT64,
+    customer_buyer_id INT64,
     item_id INT64,
     quantity INT64, 
     value FLOAT64,
     status STRING,
     created_at TIMESTAMP,
     updated_at TIMESTAMP
-    --FOREIGN KEY (cutomer_seller_id) REFERENCES customer(cliente_id)
-    --FOREIGN KEY (cutomer_buyer_id) REFERENCES customer(customer_id)
+    --FOREIGN KEY (customer_seller_id) REFERENCES customer(customer_id)
+    --FOREIGN KEY (customer_buyer_id) REFERENCES customer(customer_id)
     --FOREIGN KEY (item_id) REFERENCES item(item_id)
 );
